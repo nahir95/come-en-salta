@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comé en Salta: una gastronomía con alma salteña</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Comé en Salta</h1>
+    <nav>
+      <a href="#restaurantes">Restaurantes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Carrusel -->
+  <section class="hero">
+    <div class="carousel" id="carousel">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200" alt="Empanadas salteñas">
+      <img src="https://images.unsplash.com/photo-1601924582971-c8b28a3a13f1?w=1200" alt="Locro salteño">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1200" alt="Comida regional salteña">
+    </div>
+    <button id="prev" class="btn-carrusel">❮</button>
+    <button id="next" class="btn-carrusel">❯</button>
+    <div class="overlay">
+      <h2>Comé en Salta: una gastronomía con alma salteña</h2>
+      <p>Descubrí los mejores restaurantes de la ciudad de Salta y sus alrededores.</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="restaurantes">
+      <h2>Restaurantes destacados</h2>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1613145993481-91a63487b9f2?w=1200" alt="Peña folclórica">
+        <div class="card-content">
+          <h3>La Peña del Folklore</h3>
+          <p>Ubicada en la calle Balcarce, ofrece música tradicional, empanadas y vinos salteños.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1200" alt="Restaurante regional">
+        <div class="card-content">
+          <h3>Adobe Cocina Regional</h3>
+          <p>Platos típicos del norte argentino en un ambiente acogedor.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=1200" alt="Cafetería en Salta">
+        <div class="card-content">
+          <h3>Cafetería La Esquina</h3>
+          <p>Deliciosos postres, café de altura y un ambiente tranquilo en zona norte.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Creado con ❤️ por Comé en Salta · 2025
+  </footer>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const slides = carousel.querySelectorAll('img');
+    let index = 0;
+
+    function showSlide(i) {
+      index = (i + slides.length) % slides.length;
+      carousel.style.transform = `translateX(${-index * 100}%)`;
+    }
+
+    document.getElementById('next').addEventListener('click', () => showSlide(index + 1));
+    document.getElementById('prev').addEventListener('click', () => showSlide(index - 1));
+
+    setInterval(() => showSlide(index + 1), 4000);
+  </script>
+</body>
+</html>
