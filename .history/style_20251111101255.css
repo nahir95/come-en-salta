@@ -1,0 +1,259 @@
+/* ==========================
+   ESTILOS GENERALES
+========================== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* ==========================
+   HEADER
+========================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-bottom: 3px solid #b3003c;
+}
+
+header h1 {
+  color: #b3003c;
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b3003c;
+}
+
+/* ==========================
+   CARRUSEL (HERO)
+========================== */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel {
+  display: flex;
+  width: 300%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+/* Botones del carrusel */
+.btn-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(179, 0, 60, 0.8);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.btn-carrusel:hover {
+  background-color: #b3003c;
+}
+
+#prev { left: 20px; }
+#next { right: 20px; }
+
+/* Texto sobre el carrusel */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+/* ==========================
+   SECCIÓN INICIO
+========================== */
+.inicio {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.inicio h2 {
+  color: #b3003c;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.inicio p {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* BOTONES PRINCIPALES */
+.inicio-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: 2px solid #b3003c;
+  border-radius: 8px;
+  color: #b3003c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.inicio-buttons .btn:hover {
+  background: #b3003c;
+  color: white;
+}
+
+.btn-secundario {
+  background: #b3003c;
+  color: white;
+}
+
+.btn-secundario:hover {
+  background: transparent;
+  color: #b3003c;
+}
+
+/* ==========================
+   SECCIÓN "POR QUÉ COMER EN SALTA"
+========================== */
+.porque {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  border-top: 2px solid #b3003c;
+  border-bottom: 2px solid #b3003c;
+}
+
+.porque h2 {
+  color: #b3003c;
+  margin-bottom: 15px;
+}
+
+.porque p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==========================
+   SABORES
+========================== */
+.sabores {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sabores h2 {
+  color: #b3003c;
+  margin-bottom: 25px;
+}
+
+.sabores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.plato {
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid #b3003c;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plato:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.plato img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.plato h3 {
+  padding: 12px;
+  color: #b3003c;
+}
+
+/* ==========================
+   FRASE FINAL
+========================== */
+.frase {
+  background: #b3003c;
+  color: white;
+  text-align: center;
+  padding: 40px 10px;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #b3003c;
+  font-weight: 500;
+}
+
+
+
+

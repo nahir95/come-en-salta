@@ -1,0 +1,223 @@
+/* ====== ESTILO GENERAL ====== */
+/* ====== SECCIÓN INICIO ====== */
+.inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(179, 0, 60, 0.3)), 
+              url("https://images.unsplash.com/photo-1542736667-069246bdbc74?w=1200") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 2px solid #b3003c;
+}
+
+.inicio-content {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.inicio h2 {
+  color: #b3003c;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.inicio p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.inicio-buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border: 2px solid #b3003c;
+  border-radius: 8px;
+  color: #b3003c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.inicio-buttons .btn:hover {
+  background: #b3003c;
+  color: white;
+}
+
+.btn-secundario {
+  background: #b3003c;
+}
+
+.btn-secundario:hover {
+  background: transparent;
+  color: #b3003c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #121212; /* negro profundo */
+  color: #f5f5f5;
+}
+
+h1, h2, h3 {
+  color: #b3003c; /* bordó principal */
+}
+
+/* ====== HEADER ====== */
+header {
+  position: sticky;
+  top: 0;
+  background: #1e1e1e;
+  border-bottom: 2px solid #b3003c;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #b3003c;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b3003c;
+}
+
+/* ====== HERO / CARRUSEL ====== */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 420px;
+  border-bottom: 3px solid #b3003c;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.btn-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f5f5f5;
+  border: 2px solid #b3003c;
+  font-size: 28px;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-carrusel:hover {
+  background: #b3003c;
+  color: white;
+}
+
+#prev { left: 20px; }
+#next { right: 20px; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 25px;
+  text-align: left;
+}
+
+.overlay h2 {
+  color: #b3003c;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+/* ====== MAIN ====== */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  border-left: 5px solid #b3003c;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* ====== TARJETAS ====== */
+.card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  border: 1px solid #b3003c;
+  box-shadow: 0 4px 15px rgba(179, 0, 60, 0.2);
+  overflow: hidden;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(179, 0, 60, 0.35);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #b3003c;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #ddd;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #bbb;
+  border-top: 2px solid #b3003c;
+  margin-top: 40px;
+}
